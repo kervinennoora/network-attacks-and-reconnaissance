@@ -26,6 +26,13 @@
 
 Ohitan tämän kohdan raportoinnin, sillä Linuxin asennus on minulle tuttua ja sitä tehdessä ei ilmestynyt ongelmia. 
 
+## b) Ei voi kalastaa
+
+Avattuani Kali koneen pingasin Googlea komennolla ``ping 8.8.8.8`` ja sain vastauksen. Irroitin virtuaalikoneen verkosta ja pingasin uudelleen. Tällä kertaa se ei onnistunut.
+
+![image](https://github.com/user-attachments/assets/35df6320-0c89-4f61-988a-4b87ab997a2e)
+
+
 ## Lähteet
 Karvinen, T. 2025. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissence. Saatavila: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/.
 

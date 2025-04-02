@@ -79,7 +79,7 @@ Analysoitavat paketit:
 
 ![image](https://github.com/user-attachments/assets/3256cc62-65f8-492d-9825-c6174e0d106e)
 
-Kuvassa näkyy ARP-kyselyt:
+**Kuvassa näkyy:**
 - Rivillä yksi lähetetään broadcast pyyntöä.
 - Rivillä kaksi vastataan pyyntöön.
 ICMP liikenne:

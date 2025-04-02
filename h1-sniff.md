@@ -54,7 +54,12 @@ Wireshark on mielstäni hyvä siitä syystä, että eri paketit ovat väri kooda
 Sinisellä taustalla oleva DNS paketti on osa sovelluskerrosta. Vihreällä taustalla näkyy TCP, joka on osa "kuljetuskerrosta". Pinkkiä taustaa vasten löytyy ICMPv6 paketit, jotka ovat osa internet-kerrosta. Verkko/linkki-kerroksen paketit löytyivät valitessa yksi paketti tarkempaan tarkasteluun.
 
 ![image](https://github.com/user-attachments/assets/cc3798b4-96eb-441e-adc4-ee8bd3491832)
+
 Kuvassa näkyy lähdeosoite ja kohdeosoite.
+
+## Mitäs tuli surffailtua? 
+
+Surfing-secure.pcapin avulla selvisi, että kaappauksissa on kaksi konetta. Silmään minulla pistää TCP, DNS, ICMP ja HTTP protokollat. Kaappaus oli noin 20 pakettia pitkä eli todella lyhyt. 
 
 ## Lähteet
 Karvinen, T. 2025. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissence. Saatavila: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/.

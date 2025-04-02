@@ -46,6 +46,15 @@ Testasin sniffausta pingaamalla Googleen.
 
 ## d) Oikeesti TCP/IP
 
+Pingatessa verkkoliikennettä käytin komentoa ``wget https://example.com``.
+Wireshark on mielstäni hyvä siitä syystä, että eri paketit ovat väri koodattuja.
+
+![image](https://github.com/user-attachments/assets/aa920cfe-b1fa-40dd-9daa-74a2dca0e5de)
+
+Sinisellä taustalla oleva DNS paketti on osa sovelluskerrosta. Vihreällä taustalla näkyy TCP, joka on osa "kuljetuskerrosta". Pinkkiä taustaa vasten löytyy ICMPv6 paketit, jotka ovat osa internet-kerrosta. Verkko/linkki-kerroksen paketit löytyivät valitessa yksi paketti tarkempaan tarkasteluun.
+
+![image](https://github.com/user-attachments/assets/cc3798b4-96eb-441e-adc4-ee8bd3491832)
+Kuvassa näkyy lähdeosoite ja kohdeosoite.
 
 ## Lähteet
 Karvinen, T. 2025. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissence. Saatavila: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/.

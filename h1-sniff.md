@@ -22,6 +22,9 @@
 - Omat verkkoliittymät voi tarkastaa komennoilla
     - ``ip a``
     - ``ip route``
+## a) Linux
+
+Ohitan tämän kohdan raportoinnin, sillä Linuxin asennus on minulle tuttua ja sitä tehdessä ei ilmestynyt ongelmia. 
 
 ## Lähteet
 Karvinen, T. 2025. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissence. Saatavila: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/.

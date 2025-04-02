@@ -57,9 +57,36 @@ Sinisellä taustalla oleva DNS paketti on osa sovelluskerrosta. Vihreällä taus
 
 Kuvassa näkyy lähdeosoite ja kohdeosoite.
 
-## Mitäs tuli surffailtua? 
+## e) Mitäs tuli surffailtua? 
 
 Surfing-secure.pcapin avulla selvisi, että kaappauksissa on kaksi konetta. Silmään minulla pistää TCP, DNS, ICMP ja HTTP protokollat. Kaappaus oli noin 20 pakettia pitkä eli todella lyhyt. 
+
+## g) Minkä merkkinen verkkokortti käyttäjällä on?
+
+![image](https://github.com/user-attachments/assets/401ad5b8-e27b-41be-b7d5-7b087fd65501)
+
+Kyseessä on Loopback-sovitin
+
+## h) Millä weppipalvelimella käyttäjä on surffaillut?
+
+Kaappauksesta ilmenee, että käyttäjä on vieraillut DNS-palvelimella.
+
+![image](https://github.com/user-attachments/assets/c29a4b1b-97ee-4287-83e7-f2b922b6df44)
+
+## i) Analyysi
+
+Analysoitavat paketit:
+
+![image](https://github.com/user-attachments/assets/3256cc62-65f8-492d-9825-c6174e0d106e)
+
+Kuvassa näkyy ARP-kyselyt:
+- Rivillä yksi lähetetään broadcast pyyntöä.
+- Rivillä kaksi vastataan pyyntöön.
+ICMP liikenne:
+- Rivillä kolme näkyy, että pingataan osoitteeseen 8.8.8.8
+- Rivit 7,8 ja 9 viittaa siihen, että pingataan edelleen osoitteeseen 8.8.8.8
+- Riveillä 4 ja 6 näkyy ICMPv6 paketteja, jotka yrittävät multicastilla ottaa yhteyttä muihin IPv6 verkossa oleviin paketteihin.
+
 
 ## Lähteet
 Karvinen, T. 2025. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissence. Saatavila: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/.

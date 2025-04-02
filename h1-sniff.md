@@ -32,6 +32,20 @@ Avattuani Kali koneen pingasin Googlea komennolla ``ping 8.8.8.8`` ja sain vasta
 
 ![image](https://github.com/user-attachments/assets/35df6320-0c89-4f61-988a-4b87ab997a2e)
 
+## c) Wireshark
+
+Asennetaan virtuaalikonelle Wireshark. Asennuksessa hyödynsin Karvisen artikkelia Wiresharkin asennuksesta.
+
+Asennuksessa käytettiin komentoja ``sudo apt-get update`` ja ``sudo-apt get install wireshark`` . Avatakseni Wiresharkin käytin komentoja ``newgrp wireshark`` ja ``wireshark``.
+
+![image](https://github.com/user-attachments/assets/a08b4e25-c81f-47a4-ae39-8a9abdbe1b28)
+
+Testasin sniffausta pingaamalla Googleen.
+
+![image](https://github.com/user-attachments/assets/ba9815fa-4bc6-4808-95b3-da50e99260e2)
+
+## d) Oikeesti TCP/IP
+
 
 ## Lähteet
 Karvinen, T. 2025. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissence. Saatavila: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/.

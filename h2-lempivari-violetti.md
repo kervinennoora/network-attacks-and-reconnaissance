@@ -42,6 +42,31 @@ Kun kone ei ole yhteydessä internettiin, voidaan skannata portti 80 komennolla 
 
 Skannauksesta selviää, että kohteena on *localhost* jonka IP-osoite on 127.0.0.1.  Skannauksessa ei näy 999 muuta suljettua porttia ainoastaan portti 80 on skannattu. Portista 80 löytyy Apache httpd 2.4.63 palvelu. Lisäksi Ilmoitetaan HTTP-otsikko "Apache2 Debian Default Page: It works" eli oletussivun otsikko. Lopuksi selviää järjestelmätiedot eli; Linux OS, tarkemmin LInux 5.0-6.2 ja että kyseessä on paikallinen skannaus (Network Distance: 0 hops).
 
+## c) Skriptit
+
+![image](https://github.com/user-attachments/assets/2113a65e-34a1-4fbc-bde4-b6096ec7fefc)
+
+Sieltä löytyy skirptit *_http-server-header:* ja *_http-tittle*.
+
+## d) Jäljet lokissa
+
+Etsitään webbipalvelimen lokeista jäljet porttiskannauksesta komennolla ``grep "Nmap Scripting Engine" /var/log/apache2/access.log``.
+
+![image](https://github.com/user-attachments/assets/f6e23126-e5ee-4e58-99d6-64f086b1f6f7)
+
+Nmap kirjoitetaan isolla alkukirjaimella. Kuintekin HTTPS-osoitteessa se kirjoitetaan kokonaan pienellä  (https://nmap.org/book/nse.html). Komennolla ``grep -i "nmap" /var/log/apache2/access.log`` löytää porttiskannauksen isommastakin lokista. 
+
+## e) Wire Sharking
+
+## f) Net Grep
+
+## g) Agentti
+
+## h) Pienemmät jäljet
+
+## i) Hieman vaikeampi: LoWeR ChEcK
+
+
 ## Lähteet
 
 Karvinen, T. 2025. Verkkoon tunkeutuminen ja tiedustelu. Saatavilla: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu.

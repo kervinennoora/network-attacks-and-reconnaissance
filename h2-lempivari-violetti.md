@@ -30,6 +30,17 @@ Tutkitaan curlauksen lokiriviä tarkemmin.
 
 Lokista ilmenee heti alkuun päivämäärä ja aika. Tämän perässä on IPv6 osoite. Seuraavana siitä ilmenee HTTP GET -pyyntö juuripolkuun. Lisäksi siinä on statuskoodi 200 joka tarkoittaa sitä, että pyyntö on onnistunut ja palvelin vastasi. kohta "-" tarkoittaa, että pyyntö tehtiin suoraan. Ja viimeisenä meille selviää, että pyyntö tehtiin curlin avulla ja curlista on käytössä versio 8.12.1.
 
+## b) Nmapped
+
+Seuraavaksi porttiskannataan oletuswebbisivua portista 80. Ensin kuitenkin varmistetaan ettei kone ole yhteydessä internettiin. 
+
+![image](https://github.com/user-attachments/assets/efbe84f6-1f30-4d71-8098-d772a5a68ccf)
+
+Kun kone ei ole yhteydessä internettiin, voidaan skannata portti 80 komennolla ``sudo nmap -A localhost``.
+
+![image](https://github.com/user-attachments/assets/10be4e70-9041-43fc-a81d-3e30c1c743d3)
+
+Skannauksesta selviää, että kohteena on *localhost* jonka IP-osoite on 127.0.0.1.  Skannauksessa ei näy 999 muuta suljettua porttia ainoastaan portti 80 on skannattu. Portista 80 löytyy Apache httpd 2.4.63 palvelu. Lisäksi Ilmoitetaan HTTP-otsikko "Apache2 Debian Default Page: It works" eli oletussivun otsikko. Lopuksi selviää järjestelmätiedot eli; Linux OS, tarkemmin LInux 5.0-6.2 ja että kyseessä on paikallinen skannaus (Network Distance: 0 hops).
 
 ## Lähteet
 

@@ -20,6 +20,16 @@ Surffataan oletuswebbisivua komennolla ``curl http://localhost``.
 
 ![image](https://github.com/user-attachments/assets/f9f57d47-4a0a-4de3-ac3b-3f8a9e6bf86c)
 
+Tutkitaan ja tulkitaan tämä Apachen lokista. Ensin siirrytään kansioon */var/log/apache2/*, käyttäen komentoa ``cd /var/log/apache2/``. Tämän jälkeen katsotaan logia komennolla ``cat access.log``.
+
+![image](https://github.com/user-attachments/assets/5ad26a46-e45d-44ea-abf1-37b22f34aff4)
+
+Tutkitaan curlauksen lokiriviä tarkemmin.
+
+![image](https://github.com/user-attachments/assets/60ff47ef-397f-414a-a0ae-22651c4d0d1e)
+
+Lokista ilmenee heti alkuun päivämäärä ja aika. Tämän perässä on IPv6 osoite. Seuraavana siitä ilmenee HTTP GET -pyyntö juuripolkuun. Lisäksi siinä on statuskoodi 200 joka tarkoittaa sitä, että pyyntö on onnistunut ja palvelin vastasi. kohta "-" tarkoittaa, että pyyntö tehtiin suoraan. Ja viimeisenä meille selviää, että pyyntö tehtiin curlin avulla ja curlista on käytössä versio 8.12.1.
+
 
 ## Lähteet
 

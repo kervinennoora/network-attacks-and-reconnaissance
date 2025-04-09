@@ -58,11 +58,57 @@ Nmap kirjoitetaan isolla alkukirjaimella. Kuintekin HTTPS-osoitteessa se kirjoit
 
 ## e) Wire Sharking
 
+
+Aloitetaan avaamalla Wireshark.
+
+![image](https://github.com/user-attachments/assets/bd7c5f8f-edb8-4dcb-87dc-2c84dec8a740)
+
+Valitaan loopback adapteri ja siepataan verkkoliikennettä. Terminaalissa käytin komentoa ``nmap -A localhot``. Tallennetaan siepatut paketit .pcap tiedostona. 
+
+![image](https://github.com/user-attachments/assets/8edff3a7-7a6f-4e12-aa17-c44a9265a67d)
+
+Tutkitaan siepattuja paketteja tarkemmin. Etsitään kohdat joissa lukee nmap käyttäen filtteriä ``tcp.port == 80 || tcp contains "nmap"``.
+
+![image](https://github.com/user-attachments/assets/30ebdd8d-739b-4b4c-834e-464dcf22a408
+
+Filtterin avulla näemme ainoastaan portin 80 liikenteen. Paketti 55 on TCP pyyntö joka varmistaa onko portti 80 auki. Lähde ja kohde ovat samassa osoitteessa eli kyseessä paikallinen liikenne. Paketin pituus on 58 tavua.
+
+Paketti 56 on myös paikallisen liikenteen paketti. Paketissa Apache kertoo, että portti 80 on auki. Tämän paketin pituus on 54 tavua. 
+
+
 ## f) Net Grep
+
+Tarkistetaan onko ngrep asennettu Kali-koneelle. 
+
+![image](https://github.com/user-attachments/assets/99613585-d200-4c73-b94d-a326ac99d323)
+
+Se olikin jo valmiiksi asennettuna joten voimme kaapata liikennettä komennolla ``sudo ngrep -d lo -i nmap"
+
+![image](https://github.com/user-attachments/assets/a9bc8d4a-d135-4094-9ab0-2e3979043e39)
+
+Jos ymmärsin tehtävänannon oikein tässä kaappauksessa näkyy kaikki missä mainitaan nmap. 
+
 
 ## g) Agentti
 
+Kokeilin tehtävää seuraavalla monsteri komennolla jonka löysin internetin syöveristä ``nmap -p 80 --script http-title --script-args http.useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" localhost``.
+
+![image](https://github.com/user-attachments/assets/dc8f9507-6bff-47db-afcb-7db788dd3a50)
+
+
 ## h) Pienemmät jäljet
+
+Aloitetaan skannaamalla portti silloin kun kone ei ole yhteydessä internettiin komennolla ``nmap -A localhots``. Tämän jälkeen tutkitaan lokia.
+
+![image](https://github.com/user-attachments/assets/fe1d0cf0-e128-41e6-89fa-55481b73dfdc)
+
+Lokista puuttuu kohta *Nmap Scripting Engine*.
+
+Seuraavakis tutkitaan siepattu verkkoliikenne.
+
+![image](https://github.com/user-attachments/assets/9ee741c5-91ce-4b14-b10a-3543d6b63300)
+
+Sieppauksessa näkyy ainoastaan TCP ja HTTP protokollien liikennettä, verrattuuna aiempaan missä oli monia protokollia.
 
 ## i) Hieman vaikeampi: LoWeR ChEcK
 
@@ -80,3 +126,5 @@ Hitchins, E. et al. 2011. Cyber Kill Chain. Saatavilla: https://detect-respond.b
 Caltagirone, S et al. 2013. Diamond Model. Saatavilla: https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html.
 
 MITRE. s.a. ATT&CK. Saatavilla: https://attack.mitre.org/.
+
+Alagos, M. 2023. Cange your user agent in web pentests and bug bounties. Saatavilla: https://mrtalagoz.medium.com/change-your-user-agent-in-web-pentests-bug-bounties-dont-be-a-plain-jane-98b442a0c601.

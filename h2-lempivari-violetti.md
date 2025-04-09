@@ -112,6 +112,7 @@ Sieppauksessa näkyy ainoastaan TCP ja HTTP protokollien liikennettä, verrattuu
 
 ## i) Hieman vaikeampi: LoWeR ChEcK
 
+Valitettavasti aikataulutus syistä en kerkeä tehtä tätä tehtävää ennen 24h palautusrajaa. Lisään sen kuiten myöhemmin tähän dokumenttiin. 
 
 ## Lähteet
 

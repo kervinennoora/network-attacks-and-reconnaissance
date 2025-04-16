@@ -37,7 +37,22 @@ Rtl_433 vastasi takaisin.
 
 ## c) Automaattinen analyysi
 
+Ladataan analysoitava paketti.
+
+![image](https://github.com/user-attachments/assets/413038e2-cdf2-433e-99be-e9dae00f8812)
+
+Siirryin Downloads kansioon jonka jälkeen avasin näytteen komennolla ``rtl_433 -r Converted_433.92M_2000k.cs8``.
+
+![image](https://github.com/user-attachments/assets/784e96c8-1537-4fc9-b7c0-f34da30162c0)
+
+Näytteessä toistuu modelit *Nexa-Security*, *Proove-Security* ja *KlikAanKlikUit-Switch*. Osassa näytteistä ei ole id-numeroa, osassa toistuu sama *8785315*. Molempien security modelien state on off ja nw tulevat kanavalta 3. Nexan house koodi on *8785315* eli sama kuin id-numero. 
+
+
 ## d) Too complex 16?
+
+Ladataan näyte tehtävänannosta.
+
+![image](https://github.com/user-attachments/assets/bfda70bb-ac76-4362-989e-2916e808ea35)
 
 ## e) Ultimate
 

@@ -27,6 +27,14 @@ Tätä tehtävää varten kuuntelin radiota joka sijaitsee Cornwall, Englannissa
 
 ## b) rtl_433
 
+![image](https://github.com/user-attachments/assets/e90f91cd-5ba0-4ade-984b-de4a3ffc6629)
+
+Asennetaan rtl_433 merbanan ohjeilla. Ensin päivitin koneen komennolla ``sudo apt-get update`` ja tämän jälkeen asensin ohjelman komennolla ``sudo apt-get install rtl-433``. Lopuksi kokeilaan, onnistuiko asennus.
+
+![image](https://github.com/user-attachments/assets/f007ad06-0106-40ef-877d-4828e5cf6a59)
+
+Rtl_433 vastasi takaisin.
+
 ## c) Automaattinen analyysi
 
 ## d) Too complex 16?

@@ -19,6 +19,20 @@
 - Analyysin perusteella on mahdoollisuus rakentaa oma sensori esim. Arduinolla ja 433 MHz -lähettimellä.
 - 433 MHz sääsensorin signaalin voi purkaa ja jäljitellä ilman virallista dokumentaatiota käyttäen ohjelmistoradiota ja avoimia työkaluja.
 
+## a) WebSDR
+
+## b) rtl_433
+
+## c) Automaattinen analyysi
+
+## d) Too complex 16?
+
+## e) Ultimate
+
+### f) Yleiskuva
+
+### g) Bittistä
+
 ## Lähteet
 
 Karvinen. T. 2025. Verkkoon tunkeutuminen ja tiedustelu. Saatavilla: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/.

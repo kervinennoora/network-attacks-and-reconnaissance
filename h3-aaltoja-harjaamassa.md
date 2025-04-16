@@ -21,6 +21,10 @@
 
 ## a) WebSDR
 
+![image](https://github.com/user-attachments/assets/eb026cbe-f2a1-43e6-acdc-ec39bfb930f1)
+
+Tätä tehtävää varten kuuntelin radiota joka sijaitsee Cornwall, Englannissa. Kuunellessa käytin CW modulaatiota ja taajuus oli 10489751.37 kHz. Jos tulkitsen kuvaa oikein, aallon pituus on 0.09 kHz. 
+
 ## b) rtl_433
 
 ## c) Automaattinen analyysi

@@ -17,7 +17,8 @@ Esimerkiksi lähetettävän datan pituus ja odotetun vastauksen enimmäis pituus
 
 ## 3) Tutki ja kerro minkä mielenkiintoisen RFID hakkerointi uutiset löysit. 
 
-Löysin The Guardian lehdestä artikkelin brittiläisistä korkeakouluopiskelijoista, jotka skannasivat 
+Löysin The Guardian lehdestä artikkelin brittiläisistä opiskelijoita seurattiin kampuksella RFID:n avulla. West Cheshiren järjestelmä seurasi liikkeitä reaaliajassa ja metrin tarkkuudella. Koulun mukaan tavoitteena oli turvallisuus, poissaolojen vähentäminen ja tilankäytön optimointi.
+Kokeilu sai paljon vihaa, sillä kun 14-vuotiaat oppilaat pakotettiin käyttämään tagia ilman selkeää tietoisuutta sen toiminnasta, heidän itsemääräämisoikeutensa kyseenalaistui. Yksityisyys on erityisen tärkeä nuorille, jotka kehittävät itsenäisyyttään. Kertoi aktivisti Pippa King.
 
 ## Lähteet
 
